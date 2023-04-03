@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            background-color: rgb(44, 44, 44);
+            color: white;
+        }
+
+        #wrapper {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #submitTxt{
+            width: 200px;
+            border-color: rgb(198, 198, 198);
+        }
+
+        #submitBtn {
+            background-color: aliceblue;
+            border-color: white;
+            color: black;
+            border: 1px;
+        }
+
+        #list {
+            background-color: rgb(128, 128, 128);
+            width: 300px;
+            margin: 20px auto;
+
+        }
+
+
+    </style>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            // window.onload 는 js문서가 준비된 상황 이후에 발동하도록 함
+            let submitBtn = document.getElementById('submitBtn');
+            let submitTxt = document.getElementById('submitTxt');
+            let list = document.getElementById('list');
+
+
+            submitBtn.addEventListener("click", function(){
+                let createDiv = document.createElement('div')
+                createDiv.innerText = submitTxt.value;
+
+                list.appendChild(createDiv);
+                // 한 노드를 특정 부모 노드의(list) 자식 노드 리스트 중 마지막 자식으로 붙임
+                submitTxt.value = "";
+
+                createDiv.addEventListener("click", function(){
+                    createDiv.style.textDecoration = "line-through"
+                    createDiv.style.color = "red"
+
+                })
+
+                createDiv.addEventListener("dblclick", function(){
+                    list.removeChild(createDiv);
+
+                })
+            })
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>TodoList</h1>
+        <input id="submitTxt" type="text"/>
+        <button id="submitBtn">입력</button>
+        <div id="list"></div>
+    </div>
+
+
+    
+</body>
+</html>
