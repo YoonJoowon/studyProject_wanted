@@ -1,0 +1,725 @@
+@import "reset.css";
+
+*{
+    color: inherit;
+}
+
+div{
+    display: block;
+}
+
+/* 시작 */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+#wrapper{
+    height : auto;
+    min-height: 100%;
+    padding-bottom: 245px;
+}
+
+button, div, h1, h2, h3, h4, h5, h6, input, p, select, span, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button{
+    border: 0;
+    background-color: transparent;
+}
+
+/* header */
+
+/* .fixed {
+    position: fixed;
+} */
+
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #FFFFFF;
+    top: 0;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
+    z-index: 800;
+    margin: auto;
+    position: fixed;
+
+}
+
+.navCen{
+    width: 1060px;
+    margin: auto;
+    display: flex;
+}
+
+nav .bar{
+    width: 17px;
+    height: 14px;
+    display: flex;
+    padding: 15px;
+    margin-right: 100px;
+}
+
+.navCen p{
+    padding-left: 5px;
+}
+
+.bar2{
+    /* flex-grow: ; */
+    height: 50px;
+    text-align: center;
+    width: 621px;
+    margin: auto;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav li a{
+    position: relative;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    padding: 15px;
+    display: inline-block;
+}
+
+a {
+    font-family: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+
+.aside {
+    width: 271px;
+    /* height: 50px; */
+    display: flex;
+    padding: 10px 0px;
+    height: 100%;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    float: right;
+}
+
+.aside .asideImg{
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.login{
+    width: 300px;
+    height: 20px;
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.aside div{
+    padding-top: 10px;    
+    display: inline-flex;
+}
+
+.asidelogin{
+    width: 100px;
+    font-size: 13px;
+    color: #666;
+    line-height: 30px;
+    height: 30px;
+    border: 1px solid #e1e2e3;
+    border-radius: 15px;
+    padding: 0 10px;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+/* main1 */
+.main1{
+    padding-top: 50px ;
+}
+
+.main1 .slide{
+    width: 1060px;
+    height: 300px;
+    margin: auto;
+    padding: 25px 0px 0px;
+}
+
+.banner{
+    width: 1000px;
+    height: 40px;
+    background-image: linear-gradient(90deg,#01a9fe -12%,#2f5fef 37%,#046afe 72%,#00d2dd 110%);
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 38.5px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.banner p{
+    padding: 21px 30px;
+    font-size: 18px;
+    line-height: normal;
+}
+
+/* main2 */
+.main2{
+    background-image: url("https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fwanted-dev.static.wanted.co.kr%2Fbanner%2FJobsfeed_ai_banner.png&w=1440&q=75");
+    height: 355.28px;
+
+}
+
+.match1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    gap: 10px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    transform: translateX(-15px);
+
+}
+
+.match2{
+    height: 30px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.match3{
+    height: 81px;
+}
+
+.match3_txt{
+    color: #555;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    text-align: center;
+}
+
+.match3 button{
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #36f;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fefefe;
+    line-height: 22px;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    
+
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+/* main3 */
+.connect1{
+    position: relative;
+    width: 1060px;
+    height: 103px;
+    padding: 32px 40px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26px;
+    color: #fff;
+
+}
+
+.connect1_banner{
+    width: 1060px;
+    height: 103px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.connect1_1{
+    border: 1px solid black;
+    width: 327px;
+    height: 26px;
+}
+
+.connect1_2{
+    border: 1px solid black;
+    width: 134px;
+    height: 40px;
+}
+
+.connect2{
+    border: 1px solid black;
+    width: 1060px;
+    height: 225px;
+}
+
+.connect2_1{
+    border: 1px solid black;
+    width: 530px;
+    height: 80px;
+}
+
+.connect2_2{
+    border: 1px solid black;
+    width: 530px;
+    height: 80px;
+}
+
+/* main4 */
+.subTitle1{
+    border: 1px solid black;
+    height: 51px;
+    width: 1060px;
+}
+
+.subTitle1_1{
+    border: 1px solid black;
+    height: 26px;
+}
+
+.subTitle1_2{
+    border: 1px solid black;
+    height: 26px;
+}
+
+.subTitle1_2{
+    border: 1px solid black;
+    height: 20px;
+}
+
+.sunTitle_button{
+    border: 1px solid black;
+    width: 36px;
+    height: 36px;
+
+}
+
+    /* subcard1 */
+    .subCard1{
+        border: 1px solid black;
+        width: 540px;
+        height: 350px;
+    }
+
+    .subCard1_img{
+        border: 1px solid black;
+        width: 520px;
+        height: 270px;
+    }
+
+    .subCard1_img{
+        border: 1px solid black;
+        width: 42px;
+        height: 42px;
+    }
+
+    .subCard1_txt{
+        border: 1px solid black;
+        height: 21px;
+    }
+
+    .subCard1_txt2{
+        border: 1px solid black;
+        height: 16px;
+    }
+
+    .subCard1_btn{
+        border: 1px solid black;
+        width: 92px;
+        height: 40px;
+    }
+
+    .subCard1_btn p{
+        border: 1px solid black;
+        height: 15px;
+    }
+
+
+    /* subcard2 */
+    .subCard2{
+        border: 1px solid black;
+        width: 540px;
+        height: 350px;
+    }
+
+    .subCard2_img{
+        border: 1px solid black;
+        width: 520px;
+        height: 270px;
+    }
+
+    .subCard2_img{
+        border: 1px solid black;
+        width: 42px;
+        height: 42px;
+    }
+
+    .subCard2_txt{
+        border: 1px solid black;
+        height: 21px;
+    }
+
+    .subCard2_txt2{
+        border: 1px solid black;
+        height: 16px;
+    }
+
+    .subCard2_btn{
+        border: 1px solid black;
+        width: 92px;
+        height: 40px;
+    }
+
+    .subCard2_btn p{
+        border: 1px solid black;
+        height: 15px;
+    }
+
+/* main5 */
+.subTitle2{
+    border: 1px solid black;
+    height: 51px;
+    width: 1060px;
+}
+
+.subTitle2_1{
+    border: 1px solid black;
+    height: 26px;
+}
+
+.subTitle2_2{
+    border: 1px solid black;
+    height: 26px;
+}
+
+.subTitle2_2{
+    border: 1px solid black;
+    height: 20px;
+}
+
+.sunTitle_button{
+    border: 1px solid black;
+    width: 36px;
+    height: 36px;
+
+}
+
+    /* subcard3 */
+    .subCard3{
+        border: 1px solid black;
+        width: 540px;
+        height: 350px;
+    }
+
+    .subCard3_img{
+        border: 1px solid black;
+        width: 520px;
+        height: 270px;
+    }
+
+    .subCard3_img{
+        border: 1px solid black;
+        width: 42px;
+        height: 42px;
+    }
+
+    .subCard3_txt{
+        border: 1px solid black;
+        height: 21px;
+    }
+
+    .subCard3_txt2{
+        border: 1px solid black;
+        height: 16px;
+    }
+
+    .subCard3_btn{
+        border: 1px solid black;
+        width: 92px;
+        height: 40px;
+    }
+
+    .subCard1_btn p{
+        border: 1px solid black;
+        height: 15px;
+    }
+
+
+    /* subcard4 */
+    .subCard4{
+        border: 1px solid black;
+        width: 540px;
+        height: 350px;
+    }
+
+    .subCard4_img{
+        border: 1px solid black;
+        width: 520px;
+        height: 270px;
+    }
+
+    .subCard4_img{
+        border: 1px solid black;
+        width: 42px;
+        height: 42px;
+    }
+
+    .subCard4_txt{
+        border: 1px solid black;
+        height: 21px;
+    }
+
+    .subCard4_txt2{
+        border: 1px solid black;
+        height: 16px;
+    }
+
+    .subCard4_btn{
+        border: 1px solid black;
+        width: 92px;
+        height: 40px;
+    }
+
+    .subCard4_btn p{
+        border: 1px solid black;
+        height: 15px;
+    }
+
+/* tema */
+/* .tema{
+    border: 1px solid black;
+    width: 1060px;
+    height: 620px;
+} */
+
+.tema1_1{
+    border: 1px solid black;
+    width: 1060px;
+    height: 23px;
+}
+
+.tema1_1 .tema_btn{
+    border: 1px solid black;
+    width: 36px;
+    height: 36px;
+}
+
+    /* temacard1 */
+    .temacard1{
+        border: 1px solid black;
+        width: 540px;
+        height: 430px;
+    }
+
+    .temacard1_txt{
+        border: 1px solid black;
+        width: 520px;
+        height: 22px;
+    }
+
+    .temacard1_txt2{
+        border: 1px solid black;
+        width: 520px;
+        height: 16px;
+    }
+
+    .temacard1_img{
+        border: 1px solid black;
+        width: 32px;
+        height: 32px;    
+    }
+
+
+    /* temacard2 */
+    .temacard2{
+        border: 1px solid black;
+        width: 540px;
+        height: 430px;
+    }
+
+    .temacard2_txt{
+        border: 1px solid black;
+        width: 520px;
+        height: 22px;
+    }
+
+    .temacard2_txt2{
+        border: 1px solid black;
+        width: 520px;
+        height: 16px;
+    }
+
+    .temacard2_img{
+        border: 1px solid black;
+        width: 32px;
+        height: 32px;    
+    }
+
+/* feature */
+.feature{
+    border: 1px solid black;
+    width: 1060px;
+    height: 537px;
+
+}
+
+.feature h2{
+    border: 1px solid black;
+    height: 23px;
+}
+
+    .job_position1{
+        border: 1px solid black;
+        height: 384px;
+        width: 270px;
+
+    } 
+
+    .job_position2{
+        border: 1px solid black;
+        height: 384px;
+        width: 270px;
+
+    } 
+
+    .job_position3{
+        border: 1px solid black;
+        height: 384px;
+        width: 270px;
+
+    } 
+
+    .job_position4{
+        border: 1px solid black;
+        height: 384px;
+        width: 270px;
+
+    } 
+
+/* footer */
+footer{
+    height: 245px;
+    position : relative;
+    transform : translateY(-100%);
+}
+
+footer .footClass{
+    border: 1px solid black;
+    width: 1060px;
+    height: 39px;
+
+}
+
+footer .variable{
+    border: 1px solid black;
+    height: 39px;
+
+}
+
+.footClass .image1{
+        border: 1px solid black;
+        width: 20px;
+        height: 20px;
+
+}
+
+.footClass .image2{
+    border: 1px solid black;
+    width: 25px;
+    height: 16px;
+
+}
+
+.footClass .image3{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+
+}
+
+.footClass .image4{
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+
+}
+
+.footClass .image5{
+    border: 1px solid black;
+    width: 17px;
+    height: 20px;
+
+}
+
+.footClass .image6{
+    border: 1px solid black;
+    width: 17px;
+    height: 20px;
+
+}
+
+.rowClass{
+    border: 1px solid black;
+    width: 1060px;
+    height: 86px;
+
+}
+
+.rowClassTxt{
+    border: 1px solid black;
+    width: 770px;
+    height: 60px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
