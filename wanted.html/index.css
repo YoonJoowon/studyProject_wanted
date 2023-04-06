@@ -99,6 +99,14 @@ nav li a{
     display: inline-block;
 }
 
+nav li svg{
+    position: absolute;
+    top: 10px;
+    right: -7px;
+    pointer-events: none;
+
+}
+
 a {
     font-family: inherit;
     text-decoration: inherit;
@@ -363,6 +371,13 @@ a {
 
 
 /* main4 */
+.main4{
+    margin: auto;
+    width: 1060px;
+    height: 430px;
+    display: flex;
+    margin-bottom: 100px;
+}
 
 .title00{
     display: flex;
@@ -372,7 +387,6 @@ a {
     padding-top: 36px;
     
 }
-
 
 .main4SubTitle{
     width: 1060px;
@@ -503,45 +517,114 @@ a {
 }
 
 
-
-
     /* subcard1 */
+    .subcard00{
+        display: flex;
+        margin-top: 20px;
+    }
+
     .subCard1{
         border: 1px solid black;
         width: 540px;
         height: 350px;
+        padding: 10px;
     }
 
-    .subCard1_img{
+    .subCard1_img00{
         width: 520px;
         height: 270px;
+        -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+        margin: 10px;
+
     }
 
     .subCard1_img{
-        border: 1px solid black;
-        width: 42px;
-        height: 42px;
+        border-radius: 4px;
+        width: 520px;
+        height: 270px;
+        object-fit: cover;
+        
     }
 
-    .subCard1_txt{
-        border: 1px solid black;
+    .subCard1_bot{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 10px;
+        margin-top: 17px;
+    }
+
+    .subCard1_bot_img{
         height: 21px;
     }
 
+
+    .subCard1_bot_txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-right: 250px;
+    }
+
+    .subCard1_txt{
+        width: 93px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        word-break: break-all;
+    }
+
     .subCard1_txt2{
-        border: 1px solid black;
+        width: 93px;
         height: 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #999;
+        margin-top: 4px;
+
     }
 
     .subCard1_btn{
-        border: 1px solid black;
-        width: 92px;
         height: 40px;
+        font-size: 15px;
+        color: #36f;
+        background-color: #fff;
+        position: relative;
+            
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        min-width: 64px;
+        padding: 0 27px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+        background-color: none;
+        cursor: pointer;
+        border: 1px solid #e1e2e3;
+        padding: 12px 25.5px 11px;
+        line-height: 1;
     }
 
     .subCard1_btn p{
-        border: 1px solid black;
-        height: 15px;
+        width: 100%;
+        font-size: inherit;
+        font-weight: inherit;
+        display: inherit;
+        -ms-flex-align: inherit;
+        align-items: inherit;
+        -ms-flex-pack: inherit;
+        justify-content: inherit;
+        color: inherit;
     }
 
 
@@ -550,261 +633,327 @@ a {
         border: 1px solid black;
         width: 540px;
         height: 350px;
+        padding: 10px;
     }
 
-    .subCard2_img{
-        border: 1px solid black;
+    .subCard2_img00{
         width: 520px;
         height: 270px;
+        -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+        margin: 10px;
+
     }
 
     .subCard2_img{
-        border: 1px solid black;
-        width: 42px;
-        height: 42px;
+        border-radius: 4px;
+        width: 520px;
+        height: 270px;
+        object-fit: cover;
+        
+    }
+
+    .subCard2_bot{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 10px;
+        margin-top: 17px;
+    }
+
+    .subCard2_bot_img{
+        height: 21px;
+    }
+
+
+    .subCard2_bot_txt{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        margin-right: 200px;
     }
 
     .subCard2_txt{
-        border: 1px solid black;
-        height: 21px;
+        width: 150px;
+        height: 20px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        word-break: break-all;
     }
 
     .subCard2_txt2{
-        border: 1px solid black;
+        width: 93px;
         height: 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #999;
+        margin-top: 4px;
     }
 
     .subCard2_btn{
-        border: 1px solid black;
-        width: 92px;
         height: 40px;
+        font-size: 15px;
+        color: #36f;
+        background-color: #fff;
+        position: relative;
+            
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        min-width: 64px;
+        padding: 0 27px;
+        box-sizing: border-box;
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+        background-color: none;
+        cursor: pointer;
+        border: 1px solid #e1e2e3;
+        padding: 12px 25.5px 11px;
+        line-height: 1;
     }
 
     .subCard2_btn p{
-        border: 1px solid black;
-        height: 15px;
+        width: 100%;
+        font-size: inherit;
+        font-weight: inherit;
+        display: inherit;
+        align-items: inherit;
+        justify-content: inherit;
+        color: inherit;
     }
 
-/* main5 */
-.subTitle2{
-    border: 1px solid black;
-    height: 51px;
-    width: 1060px;
+/* main4 - 테마로 모아보는 오즘 채용 */
+.temaCard_bot{
+    margin-top: 50px;
+    margin-left: 8px;
 }
 
-.subTitle2_1{
-    border: 1px solid black;
-    height: 26px;
+.subCard1_tema_img{
+    width: 520px;
+    height: 300px;
+
 }
 
-.subTitle2_2{
-    border: 1px solid black;
-    height: 26px;
-}
-
-.subTitle2_2{
-    border: 1px solid black;
+.tema_txt{
+    width: 520px;
     height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    word-break: break-all;
 }
 
-.sunTitle_button{
-    border: 1px solid black;
-    width: 36px;
-    height: 36px;
+.tema_txt2{
+    width: 520px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+    margin-top: 8px;
+}
+
+.tema_txt3{
+    width: 520px;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    word-break: break-all;
+}
+
+.tema_txt4{
+    width: 520px;
+    height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+    margin-top: 8px;
+}
+
+.tema_img{
+    margin-top: 16px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.tema_img img{
+    display: inline;
+    margin-right: 8px;
 
 }
 
-    /* subcard3 */
-    .subCard3{
-        border: 1px solid black;
-        width: 540px;
-        height: 350px;
-    }
+.tema_img span{
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
 
-    .subCard3_img{
-        border: 1px solid black;
-        width: 520px;
-        height: 270px;
-    }
-
-    .subCard3_img{
-        border: 1px solid black;
-        width: 42px;
-        height: 42px;
-    }
-
-    .subCard3_txt{
-        border: 1px solid black;
-        height: 21px;
-    }
-
-    .subCard3_txt2{
-        border: 1px solid black;
-        height: 16px;
-    }
-
-    .subCard3_btn{
-        border: 1px solid black;
-        width: 92px;
-        height: 40px;
-    }
-
-    .subCard1_btn p{
-        border: 1px solid black;
-        height: 15px;
-    }
-
-
-    /* subcard4 */
-    .subCard4{
-        border: 1px solid black;
-        width: 540px;
-        height: 350px;
-    }
-
-    .subCard4_img{
-        border: 1px solid black;
-        width: 520px;
-        height: 270px;
-    }
-
-    .subCard4_img{
-        border: 1px solid black;
-        width: 42px;
-        height: 42px;
-    }
-
-    .subCard4_txt{
-        border: 1px solid black;
-        height: 21px;
-    }
-
-    .subCard4_txt2{
-        border: 1px solid black;
-        height: 16px;
-    }
-
-    .subCard4_btn{
-        border: 1px solid black;
-        width: 92px;
-        height: 40px;
-    }
-
-    .subCard4_btn p{
-        border: 1px solid black;
-        height: 15px;
-    }
-
-/* tema */
-/* .tema{
-    border: 1px solid black;
-    width: 1060px;
-    height: 620px;
-} */
-
-.tema1_1{
-    border: 1px solid black;
-    width: 1060px;
-    height: 23px;
 }
-
-.tema1_1 .tema_btn{
-    border: 1px solid black;
-    width: 36px;
-    height: 36px;
-}
-
-    /* temacard1 */
-    .temacard1{
-        border: 1px solid black;
-        width: 540px;
-        height: 430px;
-    }
-
-    .temacard1_txt{
-        border: 1px solid black;
-        width: 520px;
-        height: 22px;
-    }
-
-    .temacard1_txt2{
-        border: 1px solid black;
-        width: 520px;
-        height: 16px;
-    }
-
-    .temacard1_img{
-        border: 1px solid black;
-        width: 32px;
-        height: 32px;    
-    }
-
-
-    /* temacard2 */
-    .temacard2{
-        border: 1px solid black;
-        width: 540px;
-        height: 430px;
-    }
-
-    .temacard2_txt{
-        border: 1px solid black;
-        width: 520px;
-        height: 22px;
-    }
-
-    .temacard2_txt2{
-        border: 1px solid black;
-        width: 520px;
-        height: 16px;
-    }
-
-    .temacard2_img{
-        border: 1px solid black;
-        width: 32px;
-        height: 32px;    
-    }
 
 /* feature */
 .feature{
-    border: 1px solid black;
     width: 1060px;
     height: 537px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 70px 0px 50px;
 
 }
 
 .feature h2{
-    border: 1px solid black;
-    height: 23px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.05;
+    color: #111;
 }
 
-    .job_position1{
-        border: 1px solid black;
-        height: 384px;
-        width: 270px;
+.fatureContainer ul{
+    margin: -10px;
+    padding: 0;
+}
+
+.fatureContainer ul li{
+    width: 25%;
+    padding: 10px;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.fatureContainer ul li img{
+    width: 250px;
+    height: 187.5px;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+    /* padding-bottom: 75%; */
+    position: relative;
+}
+
+
+.fatureContainer ul li svg{
+    background: none;
+    padding: 8px 6px;
+    width: 42px;
+    height: 42px;
+    top: 0;
+    right: 0;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+    width: 60px;
+    height: 30px;
+    border-radius: 3px;
+    position: absolute;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+    .fatureContainer01{
+        display: block;
 
     } 
 
-    .job_position2{
-        border: 1px solid black;
-        height: 384px;
-        width: 270px;
+    .fatureContainer01_1{
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        position: relative;
+        color: #333;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.2;
+        max-height: 2.4em;
+        overflow: hidden;
+        text-align: left;
+        word-break: break-word;
 
     } 
 
-    .job_position3{
-        border: 1px solid black;
-        height: 384px;
-        width: 270px;
+    .fatureContainer01_2{
+        font-size: 14px;
+        line-height: normal;
+        text-align: left;
+        word-break: break-word;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-top: 10px;
+        color: #333;
+        font-weight: 600;
 
     } 
 
-    .job_position4{
-        border: 1px solid black;
-        height: 384px;
-        width: 270px;
+    .fatureContainer01_2_3{
+        position: relative;
+
+        border-radius: 2px;
+        background-color: #fff;
+        display: inline-block;
+        font-size: 10px;
+        font-weight: 600;
+        height: 19px;
+        line-height: 19px;
+        margin-top: 4px;
+        padding: 0 5px;
+
+        border: 1px solid #00aead;
+        color: #00aead;
+
+        position: relative;
+        line-height: 19px;
+        top: -1px;
+
+    }
+
+    .fatureContainer01_3{
+        font-size: 14px;
+        line-height: normal;
+        text-align: left;
+        word-break: break-word;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        margin-top: 10px;
 
     } 
+
+    .fatureContainer01_4{
+        margin-top: 10px;
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        word-break: break-word;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    } 
+
+
+
+
 
 /* footer */
 footer{
