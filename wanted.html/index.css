@@ -70,7 +70,9 @@ nav .bar{
     height: 14px;
     display: flex;
     padding: 15px;
-    margin-right: 100px;
+    margin-right: 70px;
+    justify-content: center;
+    align-items: center;
 }
 
 .navCen p{
@@ -169,6 +171,96 @@ a {
     height: 300px;
     margin: auto;
     padding: 25px 0px 0px;
+    display: flex;
+}
+
+.main1 .slideImg img{
+    border-radius: 10px;
+}
+
+.main1 .subSlide{
+    position: absolute;
+    width: 330px;
+    height: 146px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    float: left;
+    top: 200px;
+    left: 220px;
+    /* opacity: 0;
+    text-align: left;
+    left: 34px; */
+}
+
+.main1 .subSlide h2{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.main1 .subSlide h3{
+    margin: 0 20px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 1.64;
+    color: #333;
+}
+
+.main1 .subSlide01{
+    height: 1px;
+    margin: 0;
+    border: none;
+    flex-shrink: 0;
+    background-color: #e1e2e4;
+}
+
+
+.main1 .subSlide02{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #36f;
+    margin-bottom: 50px;
+}
+
+.main1 .subSlide03{
+    width: 100%;
+    height: 40px;
+    font-size: inherit;
+    font-weight: inherit;
+    align-items: center;
+    justify-content: inherit;
+    color: inherit;
+    display: flex;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+
+.main1 .subSlide04{
+    margin-top: -2px;
+    margin-right: -1px;
+    margin-left: 2px;
+    display: flex;
+}
+
+.main1 .subSlide05{
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+
+}
+
+.main1 .subSlide06{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: inherit;
 }
 
 .banner{
@@ -291,8 +383,8 @@ a {
 
     .connect1_front{
         position: absolute;
-        top: 5px;
-        left: 800px;
+        top: 7px;
+        left: 1100px;
 
         margin-right: 200px;
         width: 124px;
@@ -304,7 +396,7 @@ a {
         z-index: 1;
         position: absolute;
         padding: 40px;
-        left: 200px;
+        left: 400px;
         
     }
 
@@ -319,7 +411,7 @@ a {
         font-weight: 600;
         padding: 11px 20px;
         margin-top: 32px;
-        left: 1000px;
+        left: 1300px;
     }
 
 
@@ -814,19 +906,20 @@ a {
     font-weight: 700;
     line-height: 1.05;
     color: #111;
+    margin-bottom: 30px;
 }
 
 .fatureContainer ul{
     margin: -10px;
-    padding: 0;
+    margin: auto;
 }
 
 .fatureContainer ul li{
-    width: 25%;
-    padding: 10px;
+    padding: 5px;
     list-style: none;
     display: inline-block;
     vertical-align: top;
+    width: 250px;
 
 }
 
@@ -837,44 +930,57 @@ a {
     box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
     /* padding-bottom: 75%; */
     position: relative;
+    background-size: cover;
 }
-
-
-.fatureContainer ul li svg{
-    background: none;
-    padding: 8px 6px;
-    width: 42px;
-    height: 42px;
-    top: 0;
-    right: 0;
-    flex-direction: row;
-    z-index: 1;
-    justify-content: flex-end;
-    align-items: flex-start;
-
-    width: 60px;
-    height: 30px;
-    border-radius: 3px;
-    position: absolute;
-    color: #fff;
-    font-size: 12px;
-    font-weight: 400;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
 
     .fatureContainer01{
         display: block;
-
+        
     } 
+
+    .fatureContainer01 .bookmarkBtn{
+        position: absolute;
+        z-index: 1;
+        width: 60px;
+        height: 30px;
+        border-radius: 3px;
+        right: 990px;
+    }
+
+    .fatureContainer02 .bookmarkBtn{
+        position: absolute;
+        z-index: 1;
+        width: 60px;
+        height: 30px;
+        border-radius: 3px;
+        right: 725px;
+    }
+
+    .fatureContainer03 .bookmarkBtn{
+        position: absolute;
+        z-index: 1;
+        width: 60px;
+        height: 30px;
+        border-radius: 3px;
+        right: 455px;
+    }
+
+    .fatureContainer04 .bookmarkBtn{
+        position: absolute;
+        z-index: 1;
+        width: 60px;
+        height: 30px;
+        border-radius: 3px;
+        right: 190px;
+    }
+
+    .fatureContainer01_body{
+        width: 250px;
+    }
+
 
     .fatureContainer01_1{
         text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
         position: relative;
         color: #333;
         font-size: 18px;
@@ -884,7 +990,9 @@ a {
         overflow: hidden;
         text-align: left;
         word-break: break-word;
-
+        width: 250px;
+        margin-right: 0px;
+        margin-top: 10px;
     } 
 
     .fatureContainer01_2{
@@ -892,7 +1000,7 @@ a {
         line-height: normal;
         text-align: left;
         word-break: break-word;
-        width: 100%;
+        width: 250px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -920,7 +1028,7 @@ a {
 
         position: relative;
         line-height: 19px;
-        top: -1px;
+        left: -8px;
 
     }
 
@@ -929,7 +1037,7 @@ a {
         line-height: normal;
         text-align: left;
         word-break: break-word;
-        width: 100%;
+        width: 250px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -944,7 +1052,7 @@ a {
         font-weight: 500;
         text-align: left;
         word-break: break-word;
-        width: 100%;
+        width: 250px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -963,72 +1071,87 @@ footer{
 }
 
 footer .footClass{
-    border: 1px solid black;
+    padding: 18px 0px;
+    background-color: #fff;
+    border-top: 1px solid #ececec;
+    display: flex;
     width: 1060px;
-    height: 39px;
+    margin: auto;
+}
 
+footer .footbottom{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto 18px;
+    display: flex;
+}
+
+footer .footbottom a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 43px;
+    width: 113px;
 }
 
 footer .variable{
-    border: 1px solid black;
-    height: 39px;
+    display: flex;
 
 }
 
-.footClass .image1{
-        border: 1px solid black;
-        width: 20px;
-        height: 20px;
-
+footer .footbottom span{
+    font-size: 15px;
+    color: #3a3a3a;
+    font-weight: 600;
+    line-height: 2.6;
+    margin-right: 45px;
+    white-space: nowrap;
 }
 
-.footClass .image2{
-    border: 1px solid black;
-    width: 25px;
-    height: 16px;
-
+footer .footbottom2{
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: 2.6;
 }
 
-.footClass .image3{
-    border: 1px solid black;
-    width: 20px;
+.footbottom2 a{
+    position: relative;
+    display: block;
+    float: left;
     height: 20px;
-
 }
 
-.footClass .image4{
-    border: 1px solid black;
-    width: 20px;
-    height: 20px;
-
-}
-
-.footClass .image5{
-    border: 1px solid black;
-    width: 17px;
-    height: 20px;
-
-}
-
-.footClass .image6{
-    border: 1px solid black;
-    width: 17px;
-    height: 20px;
-
+.footbottom2 a img{
+    margin-left: 14px;
 }
 
 .rowClass{
-    border: 1px solid black;
-    width: 1060px;
-    height: 86px;
+    border-top: 1px solid #ececec;
+    padding-top: 25px;
 
+    width: 90%;
+    max-width: 1060px;
+    margin: 0 auto 18px;
+    display: flex;
+
+    width: 1060px;
+    height: 60px;
 }
 
+
 .rowClassTxt{
-    border: 1px solid black;
     width: 770px;
     height: 60px;
-
+    float: left;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6666666667em;
+    color: #767676;
+    width: calc(100% - 290px);
+    margin-right: 40px;
 }
 
 
