@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            background-color: rgb(44, 44, 44);
+            color: white;
+        }
+
+        #wrapper {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="wrapper">
+            <h1>TodoList</h1>
+            <input id="submitTxt" type="text"/>
+            <button id="submitBtn">입력</button>
+            <div id="list"></div>
+        </div>
+    </div>
+    
+<script>
+    const container = document.getElementById('container')
+    const wrapper = document.getElementById('wrapper')
+
+    for(let i =0; i<3; i++){
+        const newItem = wrapper.cloneNode(true);
+        container.appendChild(newItem);
+
+    }
+
+</script>
+</body>
+</html>
