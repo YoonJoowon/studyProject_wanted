@@ -358,11 +358,6 @@ a {
     font-size: inherit;
 }
 
-/* main2 */
-.maint2{
-
-}
-
 
 .main1 .section2{
     width: 100%;
@@ -747,6 +742,8 @@ a {
 
 
 /* main3 */
+.main3{
+}
 
 .maint3_container{
     width: 1060px;
@@ -919,6 +916,8 @@ a {
 
 .banner_line{
     opacity: 0.2;
+    width: 1060px;
+    margin: auto;
 }
 
 
@@ -956,6 +955,10 @@ a {
     flex-shrink: 0;
     font-size: inherit;
 }
+
+
+
+
 
 /* main4 */
 .main4{
@@ -1367,6 +1370,17 @@ a {
         align-items: center;
         float: left;
     }
+
+    
+    
+    
+
+
+
+
+
+
+
 
 /* footer */
 footer{
