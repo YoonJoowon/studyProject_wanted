@@ -338,6 +338,11 @@ a {
     font-size: inherit;
 }
 
+/* main2 */
+.maint2{
+
+}
+
 
 
 
@@ -349,8 +354,6 @@ a {
 
 
 /* main3 */
-.main3{
-}
 
 .maint3_container{
     width: 1060px;
@@ -560,10 +563,6 @@ a {
     flex-shrink: 0;
     font-size: inherit;
 }
-
-
-
-
 
 /* main4 */
 .main4{
@@ -975,17 +974,6 @@ a {
         align-items: center;
         float: left;
     }
-
-    
-    
-    
-
-
-
-
-
-
-
 
 /* footer */
 footer{
