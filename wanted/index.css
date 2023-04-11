@@ -776,7 +776,6 @@ a {
 
     .subCard1_btn{
         height: 40px;
-        font-size: 15px;
         color: #36f;
         background-color: #fff;
         position: relative;
@@ -989,7 +988,7 @@ a {
     height: 537px;
     margin: auto;
     margin-top: 150px;
-    padding: 70px 0px 50px;
+    padding: 70px 0px;
 
 }
 
@@ -1163,10 +1162,15 @@ footer{
     transform : translateY(-100%);
 }
 
+.footer_line{
+    opacity: 0.2;
+    width: 100%;
+    margin: auto;
+}
+
 footer .footClass{
     padding: 18px 0px;
     background-color: #fff;
-    border-top: 1px solid #ececec;
     display: flex;
     width: 1060px;
     margin: auto;

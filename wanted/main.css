@@ -49,7 +49,7 @@ nav{
     background-color: #FFFFFF;
     top: 0;
     box-shadow: 0 1px 0 0 rgba(0,0,0,.1);
-    z-index: 800;
+    z-index: 5;
     margin: auto;
     position: fixed;
     justify-content: center;
@@ -73,6 +73,7 @@ nav .bar{
     margin-right: 70px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .navCen p{
@@ -136,11 +137,12 @@ a {
     margin-left: 20px;
 }
 
-.login{
+#login{
     width: 300px;
     height: 20px;
     font-size: 12px;
     padding-top: 10px;
+    cursor: pointer;
 }
 
 .aside div{
@@ -159,7 +161,207 @@ a {
     padding: 0 10px;
     margin-left: 15px;
     font-weight: 400;
+    cursor: pointer;
 }
+
+/* modal */
+.modal{
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+
+.modal_all{
+    background-color: white;
+    border-radius: 5px;
+    width: 100%;
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: var(--theme-palette-colors-contents-bg);
+    border: 1px solid var(--theme-palette-colors-bluegray-200);
+    z-index: 11;
+}
+
+.modal-content{
+    overflow: auto;
+    position: relative;
+    background-color: white;
+    width: 398px;
+    height: 844px;
+    /* display: none; */
+}
+
+.modal_top svg{
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding-top: 56px;
+
+    width: 93px;
+    height: 28px;
+
+}
+
+.modal_top_txt1{
+    color: var(--theme-palette-colors-black-100);
+    font-weight: var(--text-weight-subtitle-bold);
+    text-align: center;
+    letter-spacing: var(--text-spacing-subtitle);
+    font-size: var(--text-size-subtitle);
+    line-height: var(--text-height-subtitle);
+    --text-size-subtitle: 24px;
+    --text-height-subtitle: 32px;
+    --text-spacing-subtitle: -0.023em;
+}
+
+.modal_top_txt2{
+    color: var(--theme-palette-colors-gray-600);
+    font-weight: var(--text-weight-subhead-normal);
+    text-align: center;
+    letter-spacing: var(--text-spacing-subhead);
+    font-size: var(--text-size-subhead);
+    line-height: var(--text-height-subhead);
+    margin-bottom: 45px;
+}
+
+.modal_email input{
+    width: 100%;
+    height: 50px;
+    min-height: 50px;
+    padding: 0px 12px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid;
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.modal_sns{
+    display: flex;
+    width: 328px;
+    height: 78px;
+    margin: auto;
+}
+
+
+.modal_sns_icon svg{
+    flex: 1;
+    margin: 0;
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+} 
+
+.nodal_sns_icon{
+    margin: 0px 39px 0px 39px;
+
+}
+
+
+.modal_bot_select{
+    
+    padding-left: 45px;
+    font-weight: 600;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    font-size: 16px;
+    color: var(--theme-palette-colors-gray-900);
+
+}
+
+
+.modal_sns_forgot_arrow{    
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: inherit;
+    margin-left: 3px;
+    width: 12px;
+    height: 12px;
+
+}
+
+.modal_bot{
+    width: 358px;
+    margin: auto;
+}
+
+
+.modal_bot_arrow{
+    position: absolute;
+    right: 20px;
+    font-size: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+}
+
+.modal_bot_img{
+    width: 26px;
+    height: 16px;
+}
+
+.modal_bot_arrow .path{
+    width: 10px;
+    height: 10px;
+}
+
+.modal_back{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.5);
+    z-index:10;
+}
+
+
 
 /* main1 */
 .main1{
@@ -178,6 +380,63 @@ a {
     border-radius: 10px;
 }
 
+
+.main1 .subSlideBtn1{
+    left: calc((100% - 1210px)/2);
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 60px;
+    opacity: .5;
+    border-radius: 15px;
+    background-color: #fff;
+    font-size: 16px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.main1 .subSlideBtn1 span{
+    display: flex;
+    -ms-flex-align: inherit;
+    align-items: inherit;
+    -ms-flex-pack: inherit;
+    justify-content: inherit;
+}
+
+.main1 .subSlideBtn1 svg{
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    fill: currentColor;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    font-size: inherit;
+}
+
+/* carousel */
+.carousel_wrapper{
+    width: 1060px;
+    height: 300px;
+}
+
+.carousel{
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    transition: transform 0.5s;
+}
+
+.carousel img{
+    width: 1060px;
+    padding: 0px 12px 0px 12px;
+    border-radius: 20px;
+}
+
 .main1 .subSlide{
     position: absolute;
     width: 330px;
@@ -185,12 +444,13 @@ a {
     border-radius: 4px;
     background-color: #ffffff;
     float: left;
-    top: 200px;
+    top: 130px;
     margin-left: 20px;
     /* opacity: 0;
     text-align: left;
     left: 34px; */
 }
+
 
 .main1 .subSlide h2{
     margin-left: 20px;
@@ -236,6 +496,7 @@ a {
     display: flex;
     margin-top: 6px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .main1 .subSlide04{
@@ -263,62 +524,6 @@ a {
     font-size: inherit;
 }
 
-.main1 .subSlideBtn1{
-    left: calc((100% - 1210px)/2);
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: absolute;
-    top: 200px;
-    width: 30px;
-    height: 60px;
-    opacity: .5;
-    border-radius: 15px;
-    background-color: #fff;
-    font-size: 16px;
-    z-index: 10;
-
-}
-
-.main1 .subSlideBtn1 span{
-    display: flex;
-    -ms-flex-align: inherit;
-    align-items: inherit;
-    -ms-flex-pack: inherit;
-    justify-content: inherit;
-}
-
-.main1 .subSlideBtn1 svg{
-    user-select: none;
-    width: 1em;
-    height: 1em;
-    display: inline-block;
-    fill: currentColor;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    font-size: inherit;
-}
-
-/* carousel */
-.carousel_wrapper{
-    width: 1060px;
-    height: 300px;
-    overflow: hidden;
-}
-
-.carousel{
-    display: flex;
-}
-
-
-
-
-
-
-
-
 
 
 .main1 .subSlideBtn2{
@@ -336,7 +541,8 @@ a {
     border-radius: 15px;
     background-color: #fff;
     font-size: 16px;
-    z-index: 10;
+    z-index: 2;
+    cursor: pointer;
 }
 
 .main1 .subSlideBtn2 span{
@@ -401,6 +607,12 @@ a {
     font-weight: 700;
     color: #333;
     font-size: 22px;
+}
+
+.careerinsite_img button{
+
+    cursor: pointer;
+
 }
 
 
@@ -606,6 +818,19 @@ a {
     vertical-align: top;
 }
 
+
+.insitemenu_view :hover{
+    transform: translateY(-1px);
+    transition: 0.1s ease-out;
+
+}
+
+.insitemenu_view .box{
+    cursor: pointer ;
+}
+
+
+
 .insitemenu_view>li .box .img {
     overflow: hidden;
     position: relative;
@@ -740,11 +965,7 @@ a {
 
 
 
-
 /* main3 */
-.main3{
-}
-
 .maint3_container{
     width: 1060px;
     height: 108px;
@@ -1371,22 +1592,18 @@ a {
         float: left;
     }
 
-    
-    
-    
-
-
-
-
-
-
-
 
 /* footer */
 footer{
     height: 245px;
     position : relative;
     transform : translateY(-100%);
+}
+
+.footer_line{
+    opacity: 0.2;
+    width: 100%;
+    margin: auto;
 }
 
 footer .footClass{
