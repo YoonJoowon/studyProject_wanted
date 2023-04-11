@@ -301,6 +301,23 @@ a {
     font-size: inherit;
 }
 
+
+/* carousel */
+.carousel_wrapper{
+    width: 1060px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.carousel{
+    display: flex;
+}
+
+.carousel img {
+    width: 1060px;
+    height: 300px;
+  }
+
 .main1 .subSlideBtn2{
     right: calc((100% - 1200px)/2);
     display: flex;
@@ -431,12 +448,13 @@ a {
 
     .connect1{
         position: relative;
-        width: 100%;
+        width: 1060px;
         height: 100%;
         font-size: 22px;
         font-weight: 800;
         line-height: 26px;
         color: #fff;
+        margin: auto;
         
         /* padding-right: 200px; */
 
@@ -459,7 +477,7 @@ a {
     .connect1_front{
         position: absolute;
         top: 7px;
-        left: 1100px;
+        left: 700px;
 
         margin-right: 200px;
         width: 124px;
@@ -471,7 +489,7 @@ a {
         z-index: 1;
         position: absolute;
         padding: 40px;
-        left: 400px;
+        left: 50px;
         
     }
 
@@ -486,7 +504,7 @@ a {
         font-weight: 600;
         padding: 11px 20px;
         margin-top: 32px;
-        left: 1300px;
+        right: 20px;
     }
 
 
