@@ -1,4 +1,4 @@
-// slide
+// slide1
 const prevButton = document.querySelector('.subSlideBtn1');
 const nextButton = document.querySelector('.subSlideBtn2');
 const carousel = document.querySelector('.carousel');
