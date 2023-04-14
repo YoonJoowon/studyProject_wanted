@@ -650,6 +650,51 @@ a {
     margin-top: 70px;
 }
 
+.section1_btn{
+    position: absolute;
+    width: 700px;
+    margin-top: 230px;
+
+}
+
+.section1 .section1_btn_left{
+    position: absolute;
+    width: 9%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+}
+
+
+.section1 .section1_btn_left svg{
+    display: block;
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+}
+
+.section1 .section1_btn_right{
+    position: absolute;
+    width: 9%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    right: 0;
+}
+
+.section1 .section1_btn_right svg{
+    display: block;
+}
+
+
+
 .section1 .section1_img00{
     display: flex;
     flex-wrap: nowrap;
@@ -666,27 +711,24 @@ a {
 }
 
 .section1 .section1_img00_1{
-    scroll-snap-align: start;
     position: relative;
-    height: 490px; 
-
-    position: relative;
-    width: 100%;
+    height: 490px;
     flex-shrink: 0;
+    display: flex;
 
+    transition: transform 0.5s;
 }
 
-
-
-.section1 .section1_img img{
-    display: block;
+.section1 .section1_img00 img{
     border-radius: 4px;
-    object-fit: cover;
-    outline: 1px solid rgba(0,0,0,.05);
-    outline-offset: -1px;
-    width: 700px;
-}
+    scroll-snap-align: start;
 
+    object-fit:cover ;
+    outline: 1px solid rgba(0,0,0,.05);
+    width: 700px;
+    height: 490px;
+
+}
 
 
 /* aside */

@@ -282,6 +282,34 @@ a {
     margin-bottom: 8px;
 }
 
+.modal_email input:focus {
+    border: 1px solid blue;
+}
+
+
+.input[type="text"]:invalid{
+    width: 332px;
+    height: 48px;
+    padding: 0px 12px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    border: 1px solid red !important;
+}
+
+.input[type="text"]:invalid{
+    color: red;
+    font-weight: 500;
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    
+}
+
 .modal_email button{
     color: rgb(151, 151, 151);
     background-color: rgb(241, 241, 241);
@@ -294,14 +322,15 @@ a {
     border-radius: 25px;
     font-size: 16px;
     margin-bottom: 10px;
-    cursor: pointer;
     border: none;
+    cursor: pointer;
     margin-top: 30px;
 }
 
-.modal_email button :hover{
+.modal_email .modal2_open:hover{
     background-color: rgb(63, 63, 255);
     color: white;
+    cursor: pointer;
 }
 
 .modal_email_txt2 p{
@@ -467,6 +496,10 @@ a {
     z-index: 11;
 }
 
+.modal-content2 input:focus{
+    border: 1px solid blue;
+}
+
 .modal_top_close2{
     cursor: pointer;
     padding: 5px;
@@ -572,7 +605,14 @@ a {
 }
 
 .modal2_number_pass{
+    background-color: rgba(243, 243, 243, 0.671);
+    border: 1px solid rgb(233, 230, 230);
+    color: rgb(163, 163, 163);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
 
+    height: 52px;
 }
 
 .modal2_number_input2{
