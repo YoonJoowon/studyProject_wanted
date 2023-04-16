@@ -82,4 +82,3 @@ setInterval(() => {
     index += 1;
     carousel.style.transform = `translate3d(-${1084 * index}px, 0, 0)`;
   }, 3000);
-
